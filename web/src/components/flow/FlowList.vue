@@ -45,9 +45,6 @@
                     <a-form-model-item label="工作流Id">
                         <label>{{flowId}}</label>
                     </a-form-model-item>
-                    <a-form-model-item v-if="flowId === 'Environ'" label="日期">
-                        <a-date-picker show-time v-model="flowDate"/>
-                    </a-form-model-item>
                     <a-form-model-item label="重试任务">
                         <a-checkbox-group :options="options" @change="onCheckboxChange"/>
                     </a-form-model-item>
